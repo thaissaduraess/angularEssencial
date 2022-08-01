@@ -8,28 +8,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/template/footer/footer.component';
-import { HeaderComponent } from './components/template/header/header.component';
-import { NavComponent } from './components/template/nav/nav.component';
 import { SharedModule } from './shared/shared.module';
-import { HomeComponent } from './views/home/home.component';
+import { TemplateModule } from './modules/template/template.module';
 
 
 registerLocaleData(localept);
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    NavComponent,
-    HomeComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    TemplateModule, 
     SharedModule
   ],
   providers: [{

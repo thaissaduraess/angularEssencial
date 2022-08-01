@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
   constructor(private headerService: HeaderService) { }
 
   ngOnInit(): void {
+    console.log(this.routeUrl);
+    
   }
 
   get title(): string {

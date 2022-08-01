@@ -1,6 +1,6 @@
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HeaderComponent } from './../components/template/header/header.component';
+
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
@@ -33,13 +33,12 @@ const materialModules = [
 
 @NgModule({
   declarations: [
-    HeaderComponent
   ],
   imports: [
-    CommonModule, ...materialModules, BrowserModule, FormsModule
+    CommonModule, BrowserModule, FormsModule, ...materialModules
   ],
   exports: [
-    CommonModule, ...materialModules, HeaderComponent
+    CommonModule, ...materialModules
   ]
 })
 export class SharedModule { }
